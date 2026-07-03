@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>在宅Zoomモニター募集 | 公式LINEで確認</title>
+  <meta name="description" content="在宅Zoomモニター募集LP。公式LINE追加後、合言葉を送って日程調整へ進めます。">
+  <style>
+    :root {
+      --bg: #fff7f2;
+      --paper: #ffffff;
+      --pink: #ef6f8e;
+      --pink-soft: #ffe8ee;
+      --green: #24c463;
+      --green-deep: #1aa650;
+      --brown: #5f4034;
+      --text: #74605a;
+      --muted: #a08b83;
+      --border: #f3d8d4;
+      --cream: #fff1e8;
+      --shadow: 0 16px 38px rgba(105, 65, 47, .14);
+      --soft: 0 8px 22px rgba(105, 65, 47, .08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--brown);
+      font-family: "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", system-ui, sans-serif;
+      line-height: 1.75;
+      background:
+        radial-gradient(circle at 20% 0, rgba(239, 111, 142, .18), transparent 22rem),
+        radial-gradient(circle at 82% 8%, rgba(36, 196, 99, .12), transparent 20rem),
+        #fffdfb;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    p {
+      color: var(--text);
+      margin-bottom: 0;
+    }
+
+    .page {
+      width: min(100%, 430px);
+      margin: 0 auto;
+      background: var(--bg);
+      box-shadow: 0 0 0 1px rgba(243, 216, 212, .65), 0 28px 90px rgba(105, 65, 47, .14);
+      overflow: hidden;
+    }
+
+    .hero-image {
+      position: relative;
+      background: #fff;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-overlay-cta {
+      position: absolute;
+      left: 58px;
+      right: 58px;
+      bottom: 35px;
+      z-index: 2;
+    }
+
+    .hero-overlay-cta .cta {
+      min-height: 56px;
+      border: 2px dashed rgba(239, 111, 142, .45);
+      color: var(--pink);
+      font-size: 17px;
+      background: rgba(255, 255, 255, .94);
+      box-shadow: 0 10px 24px rgba(239, 111, 142, .18);
+    }
+
+    .hero-overlay-cta .arrow {
+      margin-left: 8px;
+      color: #fff;
+      background: var(--pink);
+    }
+
+    .section {
+      padding: 42px 22px;
+      background: var(--paper);
+    }
+
+    .section.tint {
+      background: #fff0f4;
+    }
+
+    .eyebrow {
+      margin-bottom: 8px;
+      color: var(--pink);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .18em;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      color: var(--brown);
+      font-size: 22px;
+      line-height: 1.45;
+      letter-spacing: .03em;
+    }
+
+    h2 strong {
+      color: var(--pink);
+    }
+
+    .lead {
+      font-size: 13px;
+      line-height: 1.95;
+    }
+
+    .cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      min-height: 56px;
+      padding: 13px 20px;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 950;
+      letter-spacing: .03em;
+      text-align: center;
+      background: linear-gradient(90deg, var(--green), #20b85b);
+      box-shadow: 0 12px 22px rgba(36, 196, 99, .26);
+    }
+
+    .line-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--green);
+      font-size: 10px;
+      font-weight: 1000;
+      background: #fff;
+      flex: 0 0 auto;
+    }
+
+    .arrow {
+      margin-left: auto;
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--green);
+      font-size: 22px;
+      line-height: 1;
+      background: #fff;
+      flex: 0 0 auto;
+    }
+
+    .note-center {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .card {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: var(--soft);
+    }
+
+    .flow {
+      display: grid;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .flow-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 16px;
+      border-radius: 16px;
+      background: #fff;
+      border: 1px solid var(--border);
+      box-shadow: var(--soft);
+    }
+
+    .flow-no {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 950;
+      background: var(--pink);
+    }
+
+    .flow-item h3 {
+      margin-bottom: 4px;
+      color: var(--brown);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .flow-item p {
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .keyword {
+      display: inline-flex;
+      margin-top: 8px;
+      padding: 5px 14px;
+      border-radius: 9px;
+      color: var(--pink);
+      font-size: 14px;
+      font-weight: 950;
+      background: var(--pink-soft);
+    }
+
+    .check-list {
+      display: grid;
+      gap: 0;
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid #f4e1df;
+    }
+
+    .check-list li {
+      position: relative;
+      padding: 13px 0 13px 27px;
+      border-bottom: 1px solid #f4e1df;
+      color: var(--brown);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .check-list li::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 18px;
+      width: 12px;
+      height: 6px;
+      border-left: 2px solid var(--pink);
+      border-bottom: 2px solid var(--pink);
+      transform: rotate(-45deg);
+    }
+
+    .reward-box {
+      margin-top: 22px;
+      padding: 28px 20px;
+      border-radius: 18px;
+      text-align: center;
+      background: #fff;
+      box-shadow: var(--soft);
+      border: 1px solid rgba(243, 216, 212, .75);
+    }
+
+    .reward-box .mini {
+      margin-bottom: 7px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 850;
+    }
+
+    .price {
+      color: var(--pink);
+      font-size: 40px;
+      font-weight: 1000;
+      line-height: 1.1;
+      letter-spacing: .01em;
+    }
+
+    .price small {
+      font-size: .42em;
+    }
+
+    .notice {
+      margin-top: 14px;
+      color: var(--text);
+      font-size: 11px;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    .reward-section {
+      background: #fde7ed;
+    }
+
+    .reward-divider {
+      height: 1px;
+      margin: 22px 0;
+      background: #f2d6dc;
+    }
+
+    .partner-count {
+      color: var(--pink);
+      font-size: 36px;
+      font-weight: 1000;
+      line-height: 1.1;
+    }
+
+    .partner-count small {
+      font-size: .42em;
+    }
+
+    .ref {
+      margin-top: 18px;
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px dashed var(--pink);
+      background: #fff8fa;
+    }
+
+    .ref b {
+      color: var(--pink);
+      font-size: 18px;
+    }
+
+    .precheck-card,
+    .honest-card {
+      padding: 26px 22px;
+      border: 1px solid #f3ccd4;
+      border-left: 5px solid var(--pink);
+      border-radius: 10px;
+      background: #fff5f7;
+      box-shadow: var(--soft);
+    }
+
+    .precheck-pill,
+    .honest-pill {
+      display: inline-flex;
+      margin-bottom: 14px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      color: var(--pink);
+      font-size: 11px;
+      font-weight: 900;
+      background: #fff;
+      border: 1px solid #f3ccd4;
+    }
+
+    .precheck-card h2,
+    .honest-card h2 {
+      margin-bottom: 14px;
+      font-size: 21px;
+      line-height: 1.55;
+    }
+
+    .precheck-card .lead,
+    .honest-card .lead {
+      color: var(--brown);
+      font-weight: 800;
+    }
+
+    .precheck-list,
+    .honest-list {
+      display: grid;
+      gap: 11px;
+      margin: 20px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .precheck-list li,
+    .honest-list li {
+      position: relative;
+      padding-left: 24px;
+      color: var(--text);
+      font-size: 12px;
+      line-height: 1.85;
+    }
+
+    .precheck-list li::before,
+    .honest-list li::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 9px;
+      width: 7px;
+      height: 7px;
+      border: 1.5px solid var(--pink);
+      border-radius: 50%;
+      background: #fff;
+    }
+
+    .faq {
+      display: grid;
+      gap: 0;
+      margin-top: 22px;
+      border-top: 1px solid #f2e2df;
+    }
+
+    details {
+      border-bottom: 1px solid #f2e2df;
+      background: #fff;
+    }
+
+    summary {
+      position: relative;
+      padding: 15px 24px 15px 0;
+      color: var(--brown);
+      font-size: 12px;
+      font-weight: 900;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::before {
+      content: "Q.";
+      margin-right: 7px;
+      color: var(--pink);
+      font-weight: 1000;
+    }
+
+    summary::after {
+      content: "+";
+      position: absolute;
+      top: 14px;
+      right: 3px;
+      color: var(--pink);
+      font-weight: 900;
+    }
+
+    details[open] summary::after {
+      content: "-";
+    }
+
+    details p {
+      padding: 0 0 15px 24px;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .final {
+      padding-bottom: 92px;
+      text-align: center;
+    }
+
+    .final .card {
+      background: linear-gradient(180deg, #fff, #fff8fa);
+    }
+
+    .fixed-cta {
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 10px;
+      z-index: 20;
+      width: min(100% - 24px, 406px);
+      margin: 0 auto;
+    }
+
+    .fixed-check {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+      padding: 8px 0 0;
+      border-top: 1px solid #f4cbd4;
+      background: rgba(255, 247, 250, .94);
+      backdrop-filter: blur(8px);
+    }
+
+    .fixed-check-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 50px;
+      padding: 12px 14px;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 950;
+      background: #ec5f89;
+      box-shadow: 0 8px 18px rgba(236, 95, 137, .24);
+    }
+
+    .fixed-check-button span {
+      padding: 4px 8px;
+      border-radius: 5px;
+      color: var(--green);
+      font-size: 11px;
+      background: #fff;
+    }
+
+    .fixed-keyword {
+      width: 62px;
+      color: var(--brown);
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1.45;
+      text-align: center;
+    }
+
+    @media (min-width: 700px) {
+      body {
+        padding: 28px 0;
+      }
+
+      .page {
+        border-radius: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main>
+      <section class="hero-image" aria-label="在宅Zoomモニター募集のファーストビュー">
+        <img src="assets/hero-top.png" alt="おうち時間を少しだけ仕事時間に。Zoomモニターのお仕事。報酬目安3,000円から4,000円。">
+        <div class="hero-overlay-cta">
+          <a class="cta" href="#flow-section">まずは内容を確認する <span class="arrow">›</span></a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="eyebrow">ABOUT</div>
+        <h2>Zoomモニターの<br>お仕事って？</h2>
+        <p class="lead">企業のサービス説明をオンラインで聞き、感想や簡単なアンケートに回答する在宅モニターです。特別な資格やむずかしい作業より、丁寧に参加できることが大切です。</p>
+        <div class="flow">
+          <article class="flow-item">
+            <div class="flow-no">1</div>
+            <div>
+              <h3>オンラインで説明を聞く</h3>
+              <p>保険・暮らし・お金まわりなど、各企業の説明をZoomで聞きます。</p>
+            </div>
+          </article>
+          <article class="flow-item">
+            <div class="flow-no">2</div>
+            <div>
+              <h3>アンケートに回答</h3>
+              <p>聞いた内容について、率直な感想を入力します。資料作成などは基本ありません。</p>
+            </div>
+          </article>
+          <article class="flow-item">
+            <div class="flow-no">3</div>
+            <div>
+              <h3>自宅から参加</h3>
+              <p>移動時間がないので、家事や予定に合わせて調整しやすい形式です。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section tint">
+        <div class="eyebrow">FOR YOU</div>
+        <h2>こんな方に、<strong>向いています</strong></h2>
+        <ul class="check-list">
+          <li>在宅でできる副業を探している</li>
+          <li>子どもや家庭の予定を優先したい</li>
+          <li>スマホで確認できる入口がほしい</li>
+          <li>外勤よりオンライン参加が合っている</li>
+          <li>スキマ時間を無理なく使いたい</li>
+        </ul>
+      </section>
+
+      <section class="section reward-section">
+        <div class="eyebrow">REWARD</div>
+        <h2>報酬について</h2>
+        <div class="reward-box">
+          <p class="mini">Zoomモニター1件あたり 約1時間</p>
+          <div class="price">3,000<small>円</small>〜4,000<small>円</small></div>
+          <p class="lead" style="margin-top:8px;text-align:center;">案件によって報酬は異なります</p>
+          <div class="reward-divider"></div>
+          <div class="partner-count">300<small>社以上</small></div>
+          <p class="lead" style="margin-top:10px;text-align:center;">複数の提携先があるため、モニター案件を中心に、状況に合わせてご案内します。</p>
+          <div class="reward-divider"></div>
+          <p class="notice">※金額は案件により異なり、収入を保証するものではありません。「絶対に続けられる」といった保証もしていません。取り組む内容はご自身で確認したうえで選べます。</p>
+        </div>
+      </section>
+
+      <section class="section tint" id="flow-section">
+        <div class="eyebrow">START</div>
+        <h2>登録から案内までの流れ</h2>
+        <div class="flow">
+          <article class="flow-item">
+            <div class="flow-no">1</div>
+            <div>
+              <h3>公式LINEを追加</h3>
+              <p>下のボタンからLINEを追加してください。</p>
+            </div>
+          </article>
+          <article class="flow-item">
+            <div class="flow-no">2</div>
+            <div>
+              <h3>合言葉を送信</h3>
+              <p>トーク画面で合言葉を送ってください。</p>
+              <span class="keyword">おうち</span>
+            </div>
+          </article>
+          <article class="flow-item">
+            <div class="flow-no">3</div>
+            <div>
+              <h3>日程調整リンクを確認</h3>
+              <p>案内を確認後、面談予約へ進めます。面談で詳しい内容を聞いてから判断できます。</p>
+            </div>
+          </article>
+        </div>
+        <div class="ref">
+          <p>予約フォームの紹介者欄には、必ず <b>まり</b> と入力してください。</p>
+        </div>
+        <div style="margin-top:18px;">
+          <a class="cta" href="https://lin.ee/XXXXXXXX"><span class="line-mark">LINE</span>登録の流れを確認する <span class="arrow">›</span></a>
+        </div>
+      </section>
+
+      <section class="section" id="precheck">
+        <div class="honest-card">
+          <div class="honest-pill">はじめる前に、正直にお伝えします</div>
+          <h2>「思っていたのと違った」を、なくしたいから。</h2>
+          <p class="lead">モニター案件を中心に、あなたの状況に合わせてご案内します。「これなら無理なく続けられそう」と思える働き方を、一緒に確認していきましょう。</p>
+          <ul class="honest-list">
+            <li>雇用や給与制ではなく、受けた案件に応じて報酬が発生するモニター形式です。</li>
+            <li>収入は案件数やタイミングで変わります。「誰でも必ず稼げる」といった保証はありません。</li>
+            <li>勧誘ではありませんが、企業案件のため、丁寧にやり取りできる方へご案内しています。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section tint">
+        <div class="precheck-card">
+          <div class="precheck-pill">お申し込み前のお願い</div>
+          <h2>面談枠には、限りがあります。</h2>
+          <p class="lead">この案内は、内容を確認して前向きに話を聞きたい方を優先しています。</p>
+          <ul class="precheck-list">
+            <li>予約後の無断キャンセルはご遠慮ください。</li>
+            <li>予定変更が必要な場合は、事前にご連絡ください。</li>
+            <li>企業案件のご案内のため、丁寧なやり取りができる方にお願いしています。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="eyebrow">WORK STYLE</div>
+        <h2>ご紹介できる案件について</h2>
+        <div class="reward-box">
+          <p class="mini">モニター案件を中心にご案内</p>
+          <div class="partner-count">300<small>社以上</small></div>
+          <p class="lead" style="margin-top:10px;text-align:center;">複数ジャンルの提携案件から、状況や希望に合わせて確認できます。</p>
+          <div class="reward-divider"></div>
+          <p class="notice">ご案内できる内容は時期や条件により変わります。無理に進めるものではなく、内容を確認したうえで「自分に合うか」を判断できます。</p>
+        </div>
+      </section>
+
+      <section class="section tint">
+        <div class="eyebrow">Q & A</div>
+        <h2>よくあるご質問</h2>
+        <div class="faq">
+          <details>
+            <summary>営業や契約は必要ですか？</summary>
+            <p>説明を聞いて感想を伝える内容です。何かを契約する義務はありません。</p>
+          </details>
+          <details>
+            <summary>未経験でも参加できますか？</summary>
+            <p>LINEやZoomなどスマホの基本操作ができれば確認できます。案件により参加条件があります。</p>
+          </details>
+          <details>
+            <summary>顔出しはありますか？</summary>
+            <p>本人確認や円滑なやり取りのため、Zoom参加時はカメラONをお願いする場合があります。</p>
+          </details>
+          <details>
+            <summary>すぐ報酬になりますか？</summary>
+            <p>案件のタイミングや参加件数によって異なります。即日収入や継続収入を保証するものではありません。</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section final">
+        <div class="card">
+          <div class="eyebrow">ENTRY</div>
+          <h2>内容を確認した方は、<br>LINEへお進みください。</h2>
+          <p class="lead">公式LINEを追加し、合言葉「おうち」を送信してください。確認後、案内と日程調整リンクをお送りします。</p>
+          <div style="margin-top:18px;">
+            <a class="cta" href="https://lin.ee/XXXXXXXX"><span class="line-mark">LINE</span>確認してLINEに進む <span class="arrow">›</span></a>
+          </div>
+          <p class="note-center">紹介者欄には「まり」と入力してください。</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="fixed-cta">
+    <div class="fixed-check">
+      <a class="fixed-check-button" href="#precheck"><span>確認</span>申込み前に確認する</a>
+      <div class="fixed-keyword">合言葉<br>「おうち」</div>
+    </div>
+  </div>
+</body>
+</html>
